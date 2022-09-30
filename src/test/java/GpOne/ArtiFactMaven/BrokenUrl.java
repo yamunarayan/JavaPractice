@@ -22,11 +22,12 @@ public class BrokenUrl {
         SoftAssert a = new SoftAssert();
         for (WebElement link : links) {
             String url = link.getAttribute("href");
-
+ HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
             HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
             conn.setRequestMethod("HEAD");
             conn.connect();
             int respCode = conn.getResponseCode();
+             HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
             System.out.println(respCode);
             a.assertTrue(respCode < 500, "The link with Text" + link.getText() + " is broken with code" + respCode);
 
