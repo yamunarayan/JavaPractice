@@ -18,15 +18,18 @@ public class BrokenUrl {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Yamuna\\Downloads\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
         SoftAssert a = new SoftAssert();
         for (WebElement link : links) {
             String url = link.getAttribute("href");
 
+
             HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
             conn.setRequestMethod("HEAD");
             conn.connect();
             int respCode = conn.getResponseCode();
+driver.get("https://rahulshettyacademy.com/AutomationPractice/");
             System.out.println(respCode);
             a.assertTrue(respCode < 500, "The link with Text" + link.getText() + " is broken with code" + respCode);
 
