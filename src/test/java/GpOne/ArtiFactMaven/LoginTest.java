@@ -9,6 +9,7 @@ public class LoginTest {
 	@Test
 	public static void main() {
 	BrowserInitialaization.LaunchBrowser();
+		//testing
 	WebDriver driver= new ChromeDriver();
 	driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 	driver.manage().window().maximize();
