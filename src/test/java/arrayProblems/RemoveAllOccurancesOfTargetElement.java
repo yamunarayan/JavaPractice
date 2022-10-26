@@ -17,9 +17,8 @@ public class RemoveAllOccurancesOfTargetElement {
         int[] output = remove(a, 5);
         Assert.assertEquals(new int[]{1,2,3,4,6},output);
                 System.out.println("output : " + Arrays.toString(output));
+        System.out.println("Output : " + Arrays.toString(removeUsingCopyOf(a,5)));
 
-        System.out.println("output : " + Arrays.toString(removeUsingStream(a,5)));
-        System.out.println("output : " + Arrays.toString(removeUsingArrayList(a,5)));
     }
 
     public static int[] remove(int[] input, int element) {
@@ -44,24 +43,14 @@ public class RemoveAllOccurancesOfTargetElement {
         return result;
 
     }
-
+    public static int[] removeUsingCopyOf(int[] input, int element){
+        int index=0;
+        for(int i=0;i<input.length;i++)
+            if(input[i]!=element)
+                input[index++]=input[i];
+        return Arrays.copyOf(input,index);
+    }
     //Using Stream
-    public static int[] removeUsingStream(int[] input, int element){
-        return Arrays.stream(input).filter(value -> value!=element).toArray();
+       //Using ArrayList
+
     }
-
-    //Using ArrayList
-    public static int[] removeUsingArrayList(int[] input, int element) {
-    List<Integer> result = new ArrayList<Integer>();
-
-    for(int i:input){
-        if(i!=element)
-            result.add(i);
-        }
-        return result.stream().mapToInt(Integer::intValue).toArray();
-    }
-
-
-
-
-}
