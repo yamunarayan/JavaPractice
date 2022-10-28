@@ -40,7 +40,7 @@ public class SumOfElementsInArray {
     //Time Complexity : O(n); Space Complexity : O(1)
 
     public static int usingRecursive(int arr[], int n){
-        if(arr==null)
+        if(n==0)
             return 0;
         if(n==1)
             return arr[0];
