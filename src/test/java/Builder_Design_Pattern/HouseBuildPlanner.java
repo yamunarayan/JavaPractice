@@ -1,7 +1,7 @@
 package Builder_Design_Pattern;
 
 public interface HouseBuildPlanner {
-    public void buildBasement();
+    public void buildBaseMent();
 
     public void buildRoof();
     public void buildInterior();

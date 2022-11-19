@@ -24,7 +24,7 @@ int output[] = {5, 1, 2, 3, 4};
     }
 
     public static int[] rotate(int[] input){
-        int i=0,j=input.length-1;
+        int i=0,j=input[input.length-1];
         while(i != j)
         {
             int temp = input[i];
