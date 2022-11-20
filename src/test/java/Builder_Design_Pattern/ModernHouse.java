@@ -8,9 +8,10 @@ public class ModernHouse implements HouseBuildPlanner {
     }
 
 
+
+
     @Override
-    public void buildBasement() {
-        this.house.setBasement("This is the Modern house's basement");
+    public void buildBaseMent() {
 
     }
 

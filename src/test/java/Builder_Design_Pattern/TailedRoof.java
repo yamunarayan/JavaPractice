@@ -3,8 +3,10 @@ package Builder_Design_Pattern;
 public class TailedRoof implements HouseBuildPlanner{
 
     private House house;
+
+
     @Override
-    public void buildBasement() {
+    public void buildBaseMent() {
         this.house.setBasement("This is tailedRoof basement");
     }
 

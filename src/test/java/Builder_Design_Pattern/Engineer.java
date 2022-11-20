@@ -8,7 +8,7 @@ public class Engineer {
     }
 
     public void ConstructHome(){
-        this.houseBuildPlanner.buildBasement();
+        this.houseBuildPlanner.buildBaseMent();
         this.houseBuildPlanner.buildRoof();
         this.houseBuildPlanner.buildInterior();
 
