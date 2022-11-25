@@ -17,7 +17,7 @@ public class BrokenUrl {
     public static void main(String[] args) throws MalformedURLException, IOException, IOException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Yamuna\\Downloads\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+            driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
         List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
         SoftAssert a = new SoftAssert();
@@ -34,8 +34,9 @@ public class BrokenUrl {
             System.out.println(respCode);
             a.assertTrue(respCode < 500, "The link with Text" + link.getText() + " is broken with code" + respCode);
 
-            a.assertAll();
+
         }
+        a.assertAll();
     }
 }
 

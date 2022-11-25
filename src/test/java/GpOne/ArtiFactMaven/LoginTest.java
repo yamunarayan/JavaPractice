@@ -11,9 +11,7 @@ public class LoginTest {
 	BrowserInitialaization.LaunchBrowser();
 		//testing new 
 	WebDriver driver= new ChromeDriver();
-WebDriver driver= new ChromeDriver();
-WebDriver driver= new ChromeDriver();
-WebDriver driver= new ChromeDriver();
+
 	driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 	driver.manage().window().maximize();
 	LoginPage loginpageobj = new LoginPage(driver);
