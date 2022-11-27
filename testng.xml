@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" data-provider-thread-count="2">
-    <test verbose="2" preserve-order="true" name="D:/ArtiFactMaven/src/test/java/testngPractice">
-
-       <!-- <groups>
-            <define name="custom">
-                <include name="Smoke"/>
-                <include name="Sanity"/>
-            </define>
-
-            <run>
-                <include name="custom"/>
-            </run>
-        </groups>-->
-    <classes>
-        <class name="testngPractice.Attributes"/>
-        <class name="testngPractice.GroupsPractice"/>
-        <class name="testngPractice.DataProvideEg"/>
-        <class name="testngPractice.DPC"/>
-        <class name="testngPractice.ParametirzationEg">
-            <parameter name="env" value="Staging"></parameter>
-        </class>
-    </classes>
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="retry.ListenerPractice"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/ArtiFactMaven/src/test/java/retry/RetryExample.java">
+        <classes>
+            <class name="retry.RetryExample">
+                <methods>
+                    <include name="testROne"/>
+                </methods>
+            </class>
+        </classes>
     </test>
 </suite>

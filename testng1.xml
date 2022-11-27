@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/ArtiFactMaven">
+        <classes><class name="GpOne.ArtiFactMaven.GoogleTest">
+            <methods><include name="HomePageCheck"/>
+            </methods>
+        </class>
+            <class name="GpOne.ArtiFactMaven.LoginTest">
+                <methods>
+                    <include name="main"/>
+                </methods></class><class name="JBasics.Factorial"><methods><include name="fact"/><include name="fact1"/></methods></class><class name="Single_responsibility.DBUtile"><methods><include name="initializeDriver"/></methods></class><class name="testngPractice.Attributes"><methods><include name="testA"/><include name="testA1"/><include name="testA2"/></methods></class><class name="testngPractice.DataProvideEg"><methods><include name="dTest"/></methods></class><class name="testngPractice.ExpectedExceptionPractice"><methods><include name="testone"/></methods></class><class name="testngPractice.SoftAsserPractice"><methods><include name="testSTest"/></methods></class><class name="testngPractice.VariableSharing"><methods><include name="testVOne"/></methods></class></classes></test></suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="false" thread-count="2">
+    <suite-files>
+        <suite-file path="testng2.xml"></suite-file>
+    </suite-files>
+    <test verbose="2" preserve-order="true" name="D:/ArtiFactMaven/src/test/java/parallel/ParallelClass1.java">
+        <classes>
+            <class name="parallel.ParallelClass1">
+
+                <methods><include name="testPOne"/>
+                    <include name="testPTwo"/>
+                    <include name="testPThree"/>
+                </methods>
+            </class>
+            <class name="parallel.ParallelClass2"/>
+        </classes>
+    </test>
+</suite>
