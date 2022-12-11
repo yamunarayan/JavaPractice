@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T16:24:33 IST" name="Suite" finished-at="2022-09-17T16:24:33 IST" duration-ms="81">
+  <suite started-at="2022-12-01T22:19:21 IST" name="All Test Suite" finished-at="2022-12-01T22:19:21 IST" duration-ms="59">
     <groups>
+      <group name="Sanity">
+        <method signature="GroupsPractice.test1()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" name="test1" class="testngPractice.GroupsPractice"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="GroupsPractice.test2()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" name="test2" class="testngPractice.GroupsPractice"/>
+      </group> <!-- Regression -->
+      <group name="API">
+        <method signature="GroupsPractice.test1()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" name="test1" class="testngPractice.GroupsPractice"/>
+        <method signature="GroupsPractice.test2()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" name="test2" class="testngPractice.GroupsPractice"/>
+      </group> <!-- API -->
+      <group name="Smoke">
+        <method signature="GroupsPractice.test1()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" name="test1" class="testngPractice.GroupsPractice"/>
+        <method signature="GroupsPractice.test2()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" name="test2" class="testngPractice.GroupsPractice"/>
+      </group> <!-- Smoke -->
+      <group name="Fun">
+        <method signature="GroupsPractice.test1()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" name="test1" class="testngPractice.GroupsPractice"/>
+        <method signature="GroupsPractice.test2()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" name="test2" class="testngPractice.GroupsPractice"/>
+      </group> <!-- Fun -->
     </groups>
-    <test started-at="2022-09-17T16:24:33 IST" name="Test" finished-at="2022-09-17T16:24:33 IST" duration-ms="81">
-      <class name="GpOne.ArtiFactMaven.LoginTest">
-        <test-method signature="test()[pri:0, instance:GpOne.ArtiFactMaven.LoginTest@4803b726]" started-at="2022-09-17T16:24:33 IST" name="test" finished-at="2022-09-17T16:24:33 IST" duration-ms="14" status="PASS">
+    <test started-at="2022-12-01T22:19:21 IST" name="D:/ArtiFactMaven/src/test/java/testngPractice/GroupsPractice.java" finished-at="2022-12-01T22:19:21 IST" duration-ms="59">
+      <class name="testngPractice.GroupsPractice">
+        <test-method signature="test1()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" started-at="2022-12-01T22:19:21 IST" name="test1" finished-at="2022-12-01T22:19:21 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- GpOne.ArtiFactMaven.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:testngPractice.GroupsPractice@3bd82cf5]" started-at="2022-12-01T22:19:21 IST" name="test2" finished-at="2022-12-01T22:19:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- testngPractice.GroupsPractice -->
+    </test> <!-- D:/ArtiFactMaven/src/test/java/testngPractice/GroupsPractice.java -->
+  </suite> <!-- All Test Suite -->
 </testng-results>

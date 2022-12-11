@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/ArtiFactMaven/src/test/java/testngPractice/DataProvideEg.java">
+        <classes>
+            <class name="testngPractice.DataProvideEg">
+                <methods>
+                    <include name="dTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

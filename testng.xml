@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="GpOne.ArtiFactMaven.LoginTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="parallel.TestNgListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/ArtiFactMaven/src/test/java/parallel/SimpleTest.java">
+        <classes>
+            <class name="parallel.SimpleTest">
+                <methods>
+                    <include name="test"/>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
