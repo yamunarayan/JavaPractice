@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="D:/ArtiFactMaven(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testngPractice.SoftAsserPractice">
+        <methods>
+          <include name="testSTest"/>
+        </methods>
+      </class> <!-- testngPractice.SoftAsserPractice -->
+      <class name="Single_responsibility.DBUtile">
+        <methods>
+          <include name="initializeDriver"/>
+        </methods>
+      </class> <!-- Single_responsibility.DBUtile -->
+      <class name="GpOne.ArtiFactMaven.LoginTest">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- GpOne.ArtiFactMaven.LoginTest -->
+      <class name="GpOne.ArtiFactMaven.GoogleTest">
+        <methods>
+          <include name="HomePageCheck"/>
+        </methods>
+      </class> <!-- GpOne.ArtiFactMaven.GoogleTest -->
+    </classes>
+  </test> <!-- D:/ArtiFactMaven(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
